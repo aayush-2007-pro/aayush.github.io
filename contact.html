@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Himalaya and Hue to discuss your brand or website project.">
+  <title>Himalaya & Hue | Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Himalaya and Hue home"><span class="brand-mark"><i class="bi bi-flower1"></i></span><span>Himalaya &amp; Hue</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><i class="bi bi-list"></i><span class="sr-only">Toggle menu</span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><i class="bi bi-house-door"></i> Home</a></li>
+        <li><a href="about.html"><i class="bi bi-people"></i> About Us</a></li>
+        <li><a class="active" href="contact.html"><i class="bi bi-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-page section">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">Start a conversation</p>
+          <h1>Tell us what<br><span>you are building.</span></h1>
+          <p>Share a little about your project, timetable, and goals. We will reply within two working days.</p>
+          <div class="contact-details">
+            <a href="mailto:hello@himalayaandhue.com"><i class="bi bi-envelope"></i><span><small>Email</small>hello@himalayaandhue.com</span></a>
+            <a href="tel:+97715501234"><i class="bi bi-telephone"></i><span><small>Phone</small>+977 1 550 1234</span></a>
+            <p><i class="bi bi-geo-alt"></i><span><small>Studio</small>Kathmandu, Nepal</span></p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-row">
+            <label for="project">Project type</label>
+            <select id="project" name="project">
+              <option>Brand identity</option>
+              <option>Website design</option>
+              <option>Strategy &amp; research</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" placeholder="What would you like to create?" required></textarea>
+          </div>
+          <button class="button button-primary" type="submit">Send message <i class="bi bi-arrow-right"></i></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark"><i class="bi bi-flower1"></i></span><span>Himalaya &amp; Hue</span></a><p>&copy; <span id="year"></span> Himalaya &amp; Hue Studio</p><div class="social-links"><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div></div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
